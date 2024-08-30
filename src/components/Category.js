@@ -1,4 +1,3 @@
-// src/components/Category.js
 import React from 'react';
 import { Link, Outlet, useParams } from 'react-router-dom';
 
@@ -12,15 +11,15 @@ const Category = () => {
 
   return (
     <div>
-      <h2>{categoryName} Items</h2>
+      <h2>{categoryName.charAt(0).toUpperCase() + categoryName.slice(1)} Items</h2>
       <ul>
-        {items[categoryName].map((item, index) => (
+        {items[categoryName]?.map((item, index) => (
           <li key={index}>
+            {/* Ensure the links are correctly generated */}
             <Link to={`/categories/${categoryName}/${item.toLowerCase()}`}>{item}</Link>
           </li>
         ))}
       </ul>
-      {/* Nested route outlet */}
       <Outlet />
     </div>
   );
