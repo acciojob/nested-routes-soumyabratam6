@@ -5,10 +5,12 @@ const Layout = () => {
   return (
     <div>
       <nav>
+        
         {/* Ensure correct links */}
-        <Link to="/">Home</Link> | 
-        <Link to="/categories/women">Women</Link> | 
-        <Link to="/categories/men">Men</Link>
+        <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/categories/women">Women</Link></li>
+        </ul>
       </nav>
       <hr />
       <Outlet />

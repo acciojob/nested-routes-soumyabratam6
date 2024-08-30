@@ -7,8 +7,7 @@ const Categories = () => {
     <div>
       <h2>Categories</h2>
       <ul>
-        <li><Link to="/categories/women">Women</Link></li>
-        <li><Link to="/categories/men">Men</Link></li>
+        <li><Link to="/categories/women">women</Link></li>
       </ul>
     </div>
   );

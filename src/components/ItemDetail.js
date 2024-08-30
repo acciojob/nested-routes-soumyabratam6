@@ -7,8 +7,7 @@ const ItemDetail = () => {
   
   return (
     <div>
-      <h3>Details for {itemName.charAt(0).toUpperCase() + itemName.slice(1)}</h3>
-      <p>This is a detailed description of {itemName}.</p>
+      <h3> {itemName.charAt(0).toUpperCase() + itemName.slice(1)}</h3>
     </div>
   );
 };

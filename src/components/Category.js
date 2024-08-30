@@ -5,8 +5,7 @@ const Category = () => {
   const { categoryName } = useParams();
 
   const items = {
-    women: ['Dress', 'Skirt', 'Blouse'],
-    men: ['Shirt', 'Trousers', 'Jacket'],
+    women: ['Gromming', 'Shirt', 'Trouser','Jewellery'],
   };
 
   return (
