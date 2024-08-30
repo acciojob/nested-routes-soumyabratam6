@@ -8,7 +8,8 @@ import ItemDetail from './ItemDetail';
 
 function App() {
   return (
-    <Router>
+      <div>
+        <Router>
       <Routes>
         {/* Layout component as the main layout with a navigation bar */}
         <Route path="/" element={<Layout />}>
@@ -22,6 +23,8 @@ function App() {
         </Route>
       </Routes>
     </Router>
+      </div>
+    
   );
 }
 
