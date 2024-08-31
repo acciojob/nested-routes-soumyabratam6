@@ -10,7 +10,7 @@ const Women = () => {
           <NavLink to="gromming">Gromming</NavLink>
         </li>
         <li>
-          <NavLink to="shirt">Shirt</NavLink>
+          <NavLink to="Shirt">Shirt</NavLink>
         </li>
         <li>
           <NavLink to="trouser">Trouser</NavLink>
