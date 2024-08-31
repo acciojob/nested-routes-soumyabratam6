@@ -9,7 +9,7 @@ import Jewellery from "./Jewellery";
 import Layout from "./Layout";
 const App = () => {
   return (
-    <div>
+    <main>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -23,7 +23,7 @@ const App = () => {
           </Route>
         </Routes>
       </BrowserRouter>
-    </div>
+    </main>
   );
 };
 
