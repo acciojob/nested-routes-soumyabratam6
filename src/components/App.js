@@ -1,31 +1,30 @@
-// src/App.js
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './Layout';
-import Categories from './Categories';
-import Category from './Category';
-import ItemDetail from './ItemDetail';
-
-function App() {
+import React from "react";
+import { BrowserRouter, Link, NavLink, Route, Routes } from "react-router-dom";
+import Home from "./Home";
+import Women from "./Women";
+import Gromming from "./Gromming";
+import Shirt from "./Shirt";
+import Trouser from "./Trouser";
+import Jewellery from "./Jewellery";
+import Layout from "./Layout";
+const App = () => {
   return (
-      <div>
-        <Router>
-      <Routes>
-        {/* Layout component as the main layout with a navigation bar */}
-        <Route path="/" element={<Layout />}>
-          {/* Index route */}
-          <Route index element={<Categories />} />
-          {/* Nested route for categories */}
-          <Route path="categories/:categoryName" element={<Category />}>
-            {/* Nested route for items within a category */}
-            <Route path=":itemName" element={<ItemDetail />} />
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/women/" element={<Women />}>
+              <Route path="gromming" element={<Gromming />} />
+              <Route path="shirt" element={<Shirt />} />
+              <Route path="trouser" element={<Trouser />} />
+              <Route path="jewellery" element={<Jewellery />} />
+            </Route>
           </Route>
-        </Route>
-      </Routes>
-    </Router>
-      </div>
-    
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
-}
+};
 
 export default App;
